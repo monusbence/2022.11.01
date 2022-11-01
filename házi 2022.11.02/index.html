@@ -1,0 +1,46 @@
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <title>Házi</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label for="nev">Megrendelő neve:</label>
+            <input type="text" id="neve" onfocus="uj('neve')" onblur="eredeti('neve')"><br>
+            <label for="cim">Megrendelő címe:</label>
+            <input type="text" id="cime" onfocus="uj('cime')" onblur="eredeti('cime')"><br>
+            <label for="telszam">Megrendelő telefonszáma:</label>
+            <input type="tel" id="telefonszama" value="+36" onfocus="uj('telefonszama')"
+                onblur="eredeti('telefonszama')"><br>
+            <input type="button" value="Elküld" onclick="adatBanyasz()">
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <h3>Visszaigazolás!</h3>
+            </tr>
+            <tr>
+                <td>Név: </td>
+                <td id="cellaSelect"></td>
+            </tr>
+            <tr>
+                <td>Cím: </td>
+                <td id="cellaRange"></td>
+            </tr>
+            <tr>
+                <td>Telefon: </td>
+                <td id="cellaRadio"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
